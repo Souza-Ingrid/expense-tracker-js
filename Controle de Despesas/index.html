@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Despesas</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Controlador de Despesas (Expense Tracker)</h1>
+
+        <form id="form-despesa">
+            <input 
+                type="text" 
+                id="nome-despesa" 
+                placeholder="Ex: Mercado" 
+                required
+            >
+
+            <input 
+                type="number" 
+                id="valor-despesa" 
+                placeholder="Ex: 120" 
+                required
+            >
+
+            <button type="submit">
+                Adicionar
+            </button>
+        </form>
+
+        <ul id="lista-despesa"></ul>
+
+        <div id="valor-total">
+            Total: R$ 0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
